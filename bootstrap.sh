@@ -14,6 +14,7 @@ function doIt() {
 		-avh --no-perms . ~;
 	
 	git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript
+	git clone https://github.com/mxw/vim-jsx.git ~/.vim/bundle/vim-jsx
 	
 	source ~/.bash_profile;
 }
