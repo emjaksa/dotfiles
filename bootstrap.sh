@@ -12,9 +12,8 @@ function doIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
-	
-	git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript
-	git clone https://github.com/mxw/vim-jsx.git ~/.vim/bundle/vim-jsx
+		
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	
 	source ~/.bash_profile;
 }
