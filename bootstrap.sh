@@ -12,9 +12,10 @@ function doIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
-		
+
+	rm -rf ~/.vim/bundle/Vundle.vim
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-	
+
 	source ~/.bash_profile;
 }
 

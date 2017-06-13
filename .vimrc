@@ -1,7 +1,13 @@
 " Use the Solarized Dark theme
+syntax enable
 set background=dark
 colorscheme solarized
-let g:solarized_termtrans=1
+" Use 14pt Monaco
+set guifont=Monaco:h16
+" Don’t blink cursor in normal mode
+set guicursor=n:blinkon0
+" Better line-height
+set linespace=8
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -17,8 +23,13 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-airline/vim-airline'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'w0rp/ale'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -42,6 +53,15 @@ let g:javascript_plugin_flow = 1
 
 " JSX
 let g:jsx_ext_required = 0
+
+" NERDTree
+let NERDTreeQuitOnOpen = 0
+let NERDTreeShowHidden = 1
+" open NERDTree with Ctrl+n
+map <C-n> :NERDTreeToggle<CR>
+" Open NERDTree automatically when vim starts up if no files were specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Make Vim more useful
 set nocompatible
@@ -122,6 +142,8 @@ if exists("&relativenumber")
 endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
+
+set ffs=unix
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace()
