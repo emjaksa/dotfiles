@@ -1,14 +1,3 @@
-" Use the Solarized Dark theme
-syntax enable
-set background=dark
-colorscheme solarized
-" Use 14pt Monaco
-set guifont=Monaco:h16
-" Don’t blink cursor in normal mode
-set guicursor=n:blinkon0
-" Better line-height
-set linespace=8
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -22,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+Plugin 'flazz/vim-colorschemes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
@@ -45,6 +35,17 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" Use the Solarized Dark theme
+syntax enable
+set background=dark
+colorscheme solarized
+" Use 14pt Monaco
+set guifont=Monaco:h16
+" Don’t blink cursor in normal mode
+set guicursor=n:blinkon0
+" Better line-height
+set linespace=8
 
 " JavaScript Configuration
 let g:javascript_plugin_jsdoc = 1
