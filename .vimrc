@@ -21,9 +21,9 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'w0rp/ale'
 Plugin 'valloric/youcompleteme'
-PLugin 'kien/ctrlp.vim'
-PLugin 'othree/html5.vim'
-PLugin 'raimondi/delimitmate'
+Plugin 'kien/ctrlp.vim'
+Plugin 'othree/html5.vim'
+Plugin 'raimondi/delimitmate'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
