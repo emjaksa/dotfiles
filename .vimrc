@@ -20,6 +20,10 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'w0rp/ale'
+Plugin 'valloric/youcompleteme'
+PLugin 'kien/ctrlp.vim'
+PLugin 'othree/html5.vim'
+PLugin 'raimondi/delimitmate'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -58,6 +62,8 @@ let g:jsx_ext_required = 0
 " NERDTree
 let NERDTreeQuitOnOpen = 0
 let NERDTreeShowHidden = 1
+
+
 " open NERDTree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 " Open NERDTree automatically when vim starts up if no files were specified
