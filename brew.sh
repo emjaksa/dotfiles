@@ -107,6 +107,7 @@ brew install macvim
 brew install mongodb
 brew install node
 brew install npm
+brew install gnupg
 ## Remove outdated versions from the cellar.
 brew cleanup
 #
